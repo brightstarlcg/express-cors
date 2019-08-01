@@ -1,0 +1,18 @@
+{
+  "name": "money",
+  "version": "1.0.0",
+  "description": "zi jin guanli",
+  "main": "server.js",
+  "scripts": {
+    "server": "nodemon server.js"
+  },
+  "author": "lcg",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "body-parser": "^1.19.0",
+    "nodemon": "^1.19.1"
+  }
+}

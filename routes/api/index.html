@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://b-gold-cdn.xitu.io/favicons/v2/apple-touch-icon.png">
+
+    <link rel="stylesheet" type="text/css" href="http://127.0.0.1:5000/ap/index.css?v=1.2"/>
+    
+    <title>资金管理</title>
+</head>
+
+<body>
+    <div>jjjj</div>
+    <script>
+        let xmlhttp=new XMLHttpRequest()
+        xmlhttp.open('GET','http://127.0.0.1:5000/api/users/test')
+        //自定义请求头
+        xmlhttp.setRequestHeader("mmd","hao");
+        xmlhttp.onreadystatechange=function () {//响应事件
+        if(xmlhttp.readyState==4 &&xmlhttp.status==200){//响应状态
+            var json=JSON.parse(xmlhttp.responseText)//响应数据
+          
+            console.log(json)
+          
+        }
+    }
+        xmlhttp.send()
+
+    //     fetch('http://127.0.0.1:5000/api/users/test',{
+           
+    //         method : "GET", 
+    //         headers:{
+    //             "mmd":"ahahha",
+                
+    //          // "Cache-Control":"max-age=20"
+    // },
+           
+    //     })
+    //         .then(function (response) {
+               
+    //             return response.json();
+    //         })
+    //         .then(function (res) {
+    //             console.log((res));
+    //         });
+    </script>
+
+</body>
+
+</html>

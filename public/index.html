@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./index.css">
+    
+    <title>资金管理</title>
+</head>
+
+<body>
+    <div>测试跨域ghgh</div>
+    <script>
+        let xmlhttp=new XMLHttpRequest()
+        xmlhttp.open('GET','http://127.0.0.1:5000/api/users/test')
+        //自定义请求头
+        xmlhttp.setRequestHeader("mmd","hao");
+        xmlhttp.onreadystatechange=function () {//响应事件
+        if(xmlhttp.readyState==4 &&xmlhttp.status==200){//响应状态
+            var json=JSON.parse(xmlhttp.responseText)//响应数据
+          
+            console.log(json)
+          
+        }
+    }
+        xmlhttp.send()
+
+    //     fetch('http://127.0.0.1:5000/api/users/test',{
+           
+    //         method : "GET", 
+    //         headers:{
+    //             "mmd":"ahahha",
+                
+    //          // "Cache-Control":"max-age=20"
+    // },
+           
+    //     })
+    //         .then(function (response) {
+               
+    //             return response.json();
+    //         })
+    //         .then(function (res) {
+    //             console.log((res));
+    //         });
+    </script>
+
+</body>
+
+</html>
