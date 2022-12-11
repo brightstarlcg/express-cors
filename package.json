@@ -9,7 +9,7 @@
   "author": "lcg",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.3"
   },
   "devDependencies": {
     "body-parser": "^1.19.0",
